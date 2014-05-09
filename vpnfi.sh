@@ -33,5 +33,5 @@ iptables -t filter -F FORWARD ; sleep 1
 iptables -t nat -F POSTROUTING ; sleep 1
 iptables -t filter -I FORWARD -j ACCEPT ; sleep 1
 iptables -t nat -I POSTROUTING -j MASQUERADE ; sleep 1
-ip rule add from 192.168.43.0/24 lookup 0 ; sleep 1
+ip rule add from 192.168.43.0/24 lookup 0 ; sleep 5
 
